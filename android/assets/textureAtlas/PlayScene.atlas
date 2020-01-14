@@ -6,182 +6,189 @@ filter: Nearest,Nearest
 repeat: none
 10
   rotate: false
-  xy: 2, 2
+  xy: 599, 620
   size: 189, 60
   orig: 189, 60
   offset: 0, 0
   index: -1
 100
   rotate: false
-  xy: 1691, 1888
+  xy: 790, 620
   size: 189, 60
   orig: 189, 60
   offset: 0, 0
   index: -1
 20
   rotate: false
-  xy: 878, 636
+  xy: 791, 558
   size: 189, 60
   orig: 189, 60
   offset: 0, 0
   index: -1
 200
   rotate: false
-  xy: 496, 636
+  xy: 409, 538
   size: 189, 60
   orig: 189, 60
   offset: 0, 0
   index: -1
 50
   rotate: false
-  xy: 2, 64
+  xy: 1284, 1300
   size: 189, 60
   orig: 189, 60
   offset: 0, 0
   index: -1
 500
   rotate: false
-  xy: 687, 636
+  xy: 600, 558
   size: 189, 60
   orig: 189, 60
   offset: 0, 0
   index: -1
 aroundFrameMoney
   rotate: false
-  xy: 1284, 1950
+  xy: 1284, 1934
   size: 592, 86
   orig: 592, 86
   offset: 0, 0
   index: -1
 bg
   rotate: false
-  xy: 2, 1316
+  xy: 2, 1300
   size: 1280, 720
   orig: 1280, 720
   offset: 0, 0
   index: -1
 btnPause
   rotate: false
-  xy: 1288, 1068
+  xy: 1878, 1917
   size: 103, 103
   orig: 103, 103
   offset: 0, 0
   index: -1
 chan
   rotate: false
-  xy: 1284, 1494
+  xy: 2, 144
   size: 190, 180
   orig: 190, 180
   offset: 0, 0
   index: -1
 chanL
   rotate: false
-  xy: 1284, 1676
+  xy: 2, 326
   size: 215, 170
   orig: 215, 170
   offset: 0, 0
   index: -1
+frame
+  rotate: false
+  xy: 2, 600
+  size: 595, 80
+  orig: 595, 80
+  offset: 0, 0
+  index: -1
 frameMoney
   rotate: false
-  xy: 2, 647
+  xy: 1284, 1883
   size: 492, 49
   orig: 492, 49
   offset: 0, 0
   index: -1
 le
   rotate: false
-  xy: 2, 126
+  xy: 1284, 1362
   size: 190, 178
   orig: 190, 178
   offset: 0, 0
   index: -1
 leDo
   rotate: false
-  xy: 1109, 1174
+  xy: 2, 2
   size: 177, 140
   orig: 177, 140
   offset: 0, 0
   index: -1
 leDoL
   rotate: false
-  xy: 219, 478
+  xy: 1501, 1714
   size: 204, 167
   orig: 204, 167
   offset: 0, 0
   index: -1
 leL
   rotate: false
-  xy: 2, 475
+  xy: 1284, 1711
   size: 215, 170
   orig: 215, 170
   offset: 0, 0
   index: -1
 leTrang
   rotate: false
-  xy: 1109, 748
+  xy: 1109, 705
   size: 164, 140
   orig: 164, 140
   offset: 0, 0
   index: -1
 leTrangL
   rotate: false
-  xy: 1284, 1325
+  xy: 219, 329
   size: 189, 167
   orig: 189, 167
   offset: 0, 0
   index: -1
 moDia
   rotate: false
-  xy: 1288, 1173
+  xy: 1300, 1148
   size: 169, 74
   orig: 169, 74
   offset: 0, 0
   index: -1
 table
   rotate: false
-  xy: 2, 698
+  xy: 2, 682
   size: 1105, 616
   orig: 1105, 616
   offset: 0, 0
   index: -1
 title
   rotate: false
-  xy: 1284, 1848
+  xy: 2, 498
   size: 405, 100
   orig: 405, 100
   offset: 0, 0
   index: -1
 tuDo
   rotate: false
-  xy: 1109, 1032
+  xy: 1109, 989
   size: 177, 140
   orig: 177, 140
   offset: 0, 0
   index: -1
 tuDoL
   rotate: false
-  xy: 2, 306
+  xy: 1284, 1542
   size: 204, 167
   orig: 204, 167
   offset: 0, 0
   index: -1
-tuTRangL
-  rotate: false
-  xy: 1501, 1679
-  size: 189, 167
-  orig: 189, 167
-  offset: 0, 0
-  index: -1
 tuTrang
   rotate: false
-  xy: 1109, 890
+  xy: 1109, 847
   size: 164, 140
   orig: 164, 140
   offset: 0, 0
   index: -1
+tuTrangL
+  rotate: false
+  xy: 1109, 1131
+  size: 189, 167
+  orig: 189, 167
+  offset: 0, 0
+  index: -1
 xocDia
   rotate: false
-  xy: 1288, 1249
+  xy: 1300, 1224
   size: 169, 74
   orig: 169, 74
   offset: 0, 0

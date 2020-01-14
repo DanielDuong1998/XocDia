@@ -14,7 +14,7 @@ import com.ss.gameLogic.StaticObjects.Config;
 public class BetTable {
   private TextureAtlas atlas;
   private GLayerGroup group;
-  private Image chan, le, tuTrang, tuDo, leTrang, leDo, center;
+  private Array<ElementBetTable> element;
   private Array<Image> chipImg;
   private Image img500, img200, img100, img50, img20, img10;
   private int isChoosing = 0;
@@ -29,25 +29,25 @@ public class BetTable {
   }
 
   private void renderUI(){
-    //center = GUI.createImage(atlas, "center");
-//    chan = GUI.createImage(atlas, "chan");
-//    le = GUI.createImage(atlas, "le");
-//    tuTrang = GUI.createImage(atlas, "tuTrang");
-//    tuDo = GUI.createImage(atlas, "tuDo");
-//    leTrang = GUI.createImage(atlas, "leTrang");
-//    leDo = GUI.createImage(atlas, "leDo");
+    element = new Array<>();
+    ElementBetTable chan = new ElementBetTable(atlas, group, 0);
+    ElementBetTable le = new ElementBetTable(atlas, group, 1);
+    ElementBetTable tuDo = new ElementBetTable(atlas, group, 2);
+    ElementBetTable tuTrang = new ElementBetTable(atlas, group, 3);
+    ElementBetTable leDo = new ElementBetTable(atlas, group, 4);
+    ElementBetTable leTrang = new ElementBetTable(atlas, group, 5);
+    element.add(chan, le, tuDo);
+    element.add(tuTrang, leDo, leTrang);
 
-//    renderImg(center,Config.WidthScreen/2, Config.HeightScreen*2/5);
-//    renderImg(chan,Config.WidthScreen/2 - center.getWidth()/2 - chan.getWidth()/2, Config.HeightScreen*2/5);
-//    renderImg(le,Config.WidthScreen/2 + center.getWidth()/2 + le.getWidth()/2, Config.HeightScreen*2/5);
-//    renderImg(tuTrang,chan.getX() + tuTrang.getWidth()/2, chan.getY() + chan.getHeight() + tuTrang.getHeight()/2);
-//    renderImg(leTrang,tuTrang.getX() + tuTrang.getWidth() + leTrang.getWidth()/2, chan.getY() + chan.getHeight() + tuTrang.getHeight()/2);
-//    renderImg(leDo,leTrang.getX() + leTrang.getWidth() + leDo.getWidth()/2,chan.getY() + chan.getHeight() + tuTrang.getHeight()/2 );
-//    renderImg(tuDo,leDo.getX() + leDo.getWidth() + tuDo.getWidth()/2, chan.getY() + chan.getHeight() + tuTrang.getHeight()/2);
-
-    //renderMoneyChip();
-    //addEventElementBetTable();
+    chan.setPosition(Config.WidthScreen*0.31f, Config.HeightScreen*0.42f);
+    le.setPosition(Config.WidthScreen*0.68f, Config.HeightScreen*0.42f);
+    tuDo.setPosition(Config.WidthScreen*0.26f, Config.HeightScreen*0.68f);
+    tuTrang.setPosition(Config.WidthScreen*0.42f, Config.HeightScreen*0.68f);
+    leTrang.setPosition(Config.WidthScreen*0.58f, Config.HeightScreen*0.68f);
+    leDo.setPosition(Config.WidthScreen*0.73f, Config.HeightScreen*0.68f);
   }
+
+
 
   private void renderImg(Image img, float x, float y){
     group.addActor(img);
@@ -112,22 +112,22 @@ public class BetTable {
   }
 
   private void addEventElementBetTable(){
-    chan.addListener(new ClickListener(){
-      @Override
-      public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-        if(!isBlockTouchE){
-          isBlockTouchE = true;
-          chan.setColor(255, 255, 0, 0.3f);
-        }
-        return super.touchDown(event, x, y, pointer, button);
-      }
-
-      @Override
-      public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
-        super.touchUp(event, x, y, pointer, button);
-        isBlockTouchE = false;
-      }
-    });
+//    chan.addListener(new ClickListener(){
+//      @Override
+//      public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
+//        if(!isBlockTouchE){
+//          isBlockTouchE = true;
+//          chan.setColor(255, 255, 0, 0.3f);
+//        }
+//        return super.touchDown(event, x, y, pointer, button);
+//      }
+//
+//      @Override
+//      public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
+//        super.touchUp(event, x, y, pointer, button);
+//        isBlockTouchE = false;
+//      }
+//    });
 
   }
 }

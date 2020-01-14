@@ -13,11 +13,12 @@ import com.ss.core.util.GStage;
 import com.ss.core.util.GUI;
 import com.ss.gameLogic.StaticObjects.Config;
 import com.ss.gameLogic.objects.BetTable;
+import com.ss.gameLogic.objects.Girl;
 
 public class GameScene extends GScreen{
-  private TextureAtlas atlas;
+  private TextureAtlas atlas, atlasGirl;
   private GLayerGroup mainGroup;
-  private Image bg, table, title, aroundFrameMoney, frameMoney;
+  private Image bg, frame;
   private Image btnPause;
   private BetTable betTable;
 
@@ -31,10 +32,14 @@ public class GameScene extends GScreen{
     initTexture();
     initGroup();
     initUI();
+
+    //test girl
+    Girl girl = new Girl(atlasGirl);
   }
 
   private void initTexture(){
     atlas = GAssetsManager.getTextureAtlas("PlayScene.atlas");
+    atlasGirl = GAssetsManager.getTextureAtlas("Girl.atlas");
   }
 
   private void initGroup(){
@@ -45,19 +50,18 @@ public class GameScene extends GScreen{
   private void initUI(){
     bg = GUI.createImage(atlas, "bg");
     btnPause = GUI.createImage(atlas, "btnPause");
+    frame = GUI.createImage(atlas, "frame");
 
     mainGroup.addActor(bg);
     mainGroup.addActor(btnPause);
-    System.out.println("ratiow: " + Config.ratioX);
+    mainGroup.addActor(frame);
     bg.setWidth(bg.getWidth()*Config.ratioX);
 
-
     btnPause.setPosition(Config.WidthScreen - btnPause.getWidth()*1.1f,btnPause.getHeight()*0.1f);
+    frame.setPosition(Config.WidthScreen/2, Config.HeightScreen - frame.getHeight()/2, Align.center);
 
-
-
+    betTable = new BetTable(atlas, mainGroup);
     addEventBtnPause(btnPause);
-
     //initBetTable();
   }
 
@@ -66,7 +70,7 @@ public class GameScene extends GScreen{
       @Override
       public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
         Config.effectBtn(btn, ()->{
-          setPauseScene(true);
+          //setPauseScene(true);
         });
         return super.touchDown(event, x, y, pointer, button);
       }

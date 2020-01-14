@@ -1,11 +1,11 @@
 package com.ss;
 
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.platform.IPlatform;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.ss.core.exSprite.particle.GParticleSystem;
-import com.ss.core.util.GAssetsManager;
 import com.ss.core.util.GDirectedGame;
 import com.ss.core.util.GScreen;
 import com.ss.core.util.GStage;
@@ -23,6 +23,7 @@ public class GMain extends GDirectedGame {
   public static TextureAtlas textureAtlas;
   public static float ratioX, ratioY;
 
+  public static Preferences prefs;
   public static IPlatform platform;
   public GMain(IPlatform plat){
     platform = plat;
@@ -77,7 +78,9 @@ public class GMain extends GDirectedGame {
     });
   }
 
-
+  private void initPrefs(){
+    prefs = Gdx.app.getPreferences("My Preferences");
+  }
   
   private static GScreen menuScreen()
   {
@@ -87,6 +90,7 @@ public class GMain extends GDirectedGame {
   public void create()
   {
       this.init();
+      this.initPrefs();
       C.init();
       this.setScreen(menuScreen());
   }
