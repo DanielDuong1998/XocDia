@@ -70,6 +70,7 @@ public class GameScene extends GScreen{
       @Override
       public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
         Config.effectBtn(btn, ()->{
+          //comment test
           //setPauseScene(true);
         });
         return super.touchDown(event, x, y, pointer, button);
