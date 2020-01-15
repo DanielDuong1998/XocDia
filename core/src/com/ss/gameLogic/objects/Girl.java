@@ -112,7 +112,7 @@ public class Girl {
   public void actionGirl1(int index){
     if(index > 0){
       hands.get(index).setVisible(true);
-      Tweens.setTimeout(group, 0.1f, ()->{
+      Tweens.setTimeout(group, 0.08f, ()->{
         hands.get(index).setVisible(false);
         actionGirl1(index-1);
       });
@@ -131,7 +131,7 @@ public class Girl {
   public void actionGirl2(int index, int total){
     if(index < total){
       hands.get(index).setVisible(true);
-      Tweens.setTimeout(group, 0.1f,()->{
+      Tweens.setTimeout(group, 0.08f,()->{
         hands.get(index).setVisible(false);
         actionGirl2(index+1, total);
       });
