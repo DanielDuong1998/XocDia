@@ -16,7 +16,7 @@ import com.ss.gameLogic.objects.BetTable;
 import com.ss.gameLogic.objects.Girl;
 
 public class GameScene extends GScreen{
-  private TextureAtlas atlas, atlasGirl;
+  private TextureAtlas atlas, atlasGirl, atlasChips;
   private GLayerGroup mainGroup;
   private Image bg, frame;
   private Image btnPause;
@@ -40,6 +40,7 @@ public class GameScene extends GScreen{
   private void initTexture(){
     atlas = GAssetsManager.getTextureAtlas("PlayScene.atlas");
     atlasGirl = GAssetsManager.getTextureAtlas("Girl.atlas");
+    atlasChips = GAssetsManager.getTextureAtlas("Chips.atlas");
   }
 
   private void initGroup(){
