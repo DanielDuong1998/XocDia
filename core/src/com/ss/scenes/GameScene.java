@@ -1,10 +1,12 @@
 package com.ss.scenes;
 
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
+import com.ss.GMain;
 import com.ss.core.util.GAssetsManager;
 import com.ss.core.util.GLayer;
 import com.ss.core.util.GLayerGroup;
@@ -21,6 +23,9 @@ public class GameScene extends GScreen{
   private Image bg, frame;
   private Image btnPause;
   private BetTable betTable;
+  private BitmapFont font;
+  public static long money = 0;
+  private boolean firstTime = true;
 
   @Override
   public void dispose() {
@@ -29,12 +34,26 @@ public class GameScene extends GScreen{
 
   @Override
   public void init() {
+    initMoney();
     initTexture();
+    initBitmapfont();
     initGroup();
     initUI();
 
     //test girl
     Girl girl = new Girl(atlasGirl);
+  }
+
+  private void initMoney(){
+    firstTime = GMain.prefs.getBoolean("firstTime", true);
+    if(firstTime){
+      GMain.prefs.putBoolean("firstTime", false);
+      GMain.prefs.putLong("money", 3000);
+      GMain.prefs.flush();
+    }
+    GMain.prefs.putLong("money", 10000000);
+    GMain.prefs.flush();
+    money = GMain.prefs.getLong("money");
   }
 
   private void initTexture(){
@@ -61,9 +80,13 @@ public class GameScene extends GScreen{
     btnPause.setPosition(Config.WidthScreen - btnPause.getWidth()*1.1f,btnPause.getHeight()*0.1f);
     frame.setPosition(Config.WidthScreen/2, Config.HeightScreen - frame.getHeight()/2, Align.center);
 
-    betTable = new BetTable(atlas, mainGroup);
+    betTable = new BetTable(atlas, atlasChips, mainGroup, font);
     addEventBtnPause(btnPause);
     //initBetTable();
+  }
+
+  private void initBitmapfont(){
+    font = GAssetsManager.getBitmapFont("moneyFont.fnt");
   }
 
   private void addEventBtnPause(Image btn){
@@ -83,9 +106,6 @@ public class GameScene extends GScreen{
     mainGroup.setPause(isPause);
   }
 
-  private void initBetTable(){
-    betTable = new BetTable(atlas, mainGroup);
-  }
 
 
   @Override

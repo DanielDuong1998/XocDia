@@ -1,6 +1,7 @@
 package com.ss.gameLogic.objects;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
@@ -12,39 +13,48 @@ import com.ss.core.util.GUI;
 import com.ss.gameLogic.StaticObjects.Config;
 
 public class BetTable {
-  private TextureAtlas atlas;
+  private TextureAtlas atlas, atlasChip;
   private GLayerGroup group;
   private Array<ElementBetTable> element;
   private Array<Image> chipImg;
   private Image img500, img200, img100, img50, img20, img10;
   private int isChoosing = 0;
   private Boolean isBlockTouch = false, isBlockTouchE = false;
+  private BitmapFont font;
 
 
 
-  public BetTable(TextureAtlas atlas, GLayerGroup group){
+  public BetTable(TextureAtlas atlas, TextureAtlas atlasChip, GLayerGroup group, BitmapFont font){
     this.atlas = atlas;
+    this.atlasChip = atlasChip;
     this.group = group;
+    this.font = font;
     renderUI();
   }
 
   private void renderUI(){
     element = new Array<>();
-    ElementBetTable chan = new ElementBetTable(atlas, group, 0);
-    ElementBetTable le = new ElementBetTable(atlas, group, 1);
-    ElementBetTable tuDo = new ElementBetTable(atlas, group, 2);
-    ElementBetTable tuTrang = new ElementBetTable(atlas, group, 3);
-    ElementBetTable leDo = new ElementBetTable(atlas, group, 4);
-    ElementBetTable leTrang = new ElementBetTable(atlas, group, 5);
+    ElementBetTable chan = new ElementBetTable(atlas, atlasChip, group, 0, font);
+    ElementBetTable le = new ElementBetTable(atlas, atlasChip, group, 1, font);
+    ElementBetTable tuDo = new ElementBetTable(atlas, atlasChip, group, 2, font);
+    ElementBetTable tuTrang = new ElementBetTable(atlas, atlasChip, group, 3, font);
+    ElementBetTable leDo = new ElementBetTable(atlas, atlasChip, group, 4, font);
+    ElementBetTable leTrang = new ElementBetTable(atlas, atlasChip, group, 5, font);
     element.add(chan, le, tuDo);
     element.add(tuTrang, leDo, leTrang);
 
     chan.setPosition(Config.WidthScreen*0.31f, Config.HeightScreen*0.42f);
+    chan.setPoMoneyTxt(Config.WidthScreen*0.31f, Config.HeightScreen*0.378f);
     le.setPosition(Config.WidthScreen*0.68f, Config.HeightScreen*0.42f);
+    le.setPoMoneyTxt(Config.WidthScreen*0.665f, Config.HeightScreen*0.378f);
     tuDo.setPosition(Config.WidthScreen*0.26f, Config.HeightScreen*0.68f);
+    tuDo.setPoMoneyTxt(Config.WidthScreen*0.26f, Config.HeightScreen*0.615f);
     tuTrang.setPosition(Config.WidthScreen*0.42f, Config.HeightScreen*0.68f);
+    tuTrang.setPoMoneyTxt(Config.WidthScreen*0.42f, Config.HeightScreen*0.615f);
     leTrang.setPosition(Config.WidthScreen*0.58f, Config.HeightScreen*0.68f);
+    leTrang.setPoMoneyTxt(Config.WidthScreen*0.57f, Config.HeightScreen*0.615f);
     leDo.setPosition(Config.WidthScreen*0.73f, Config.HeightScreen*0.68f);
+    leDo.setPoMoneyTxt(Config.WidthScreen*0.72f, Config.HeightScreen*0.615f);
   }
 
 
