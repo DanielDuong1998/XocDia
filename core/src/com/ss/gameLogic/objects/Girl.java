@@ -26,7 +26,7 @@ public class Girl {
     this.atlas = atlas;
     initGroup();
     initShape();
-    actionGirl1(5);
+    //actionGirl1(5);
     setPoCloseEyes();
     blinkEyes();
   }
@@ -64,19 +64,19 @@ public class Girl {
   private void setPoCloseEyes(){
     closeEyes.setPosition(body.getWidth()*0.503f, body.getHeight()*0.225f, Align.center);
 
-    body.addListener(new ClickListener(){
-      @Override
-      public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-        actionGirl1(5);
-        return super.touchDown(event, x, y, pointer, button);
-      }
-
-      @Override
-      public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
-        super.touchUp(event, x, y, pointer, button);
-        closeEyes.setVisible(false);
-      }
-    });
+//    body.addListener(new ClickListener(){
+//      @Override
+//      public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
+//        actionGirl1(5);
+//        return super.touchDown(event, x, y, pointer, button);
+//      }
+//
+//      @Override
+//      public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
+//        super.touchUp(event, x, y, pointer, button);
+//        closeEyes.setVisible(false);
+//      }
+//    });
   }
 
   private void blinkEyes(){

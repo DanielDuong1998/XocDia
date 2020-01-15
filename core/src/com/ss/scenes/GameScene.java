@@ -15,6 +15,7 @@ import com.ss.core.util.GStage;
 import com.ss.core.util.GUI;
 import com.ss.gameLogic.StaticObjects.Config;
 import com.ss.gameLogic.objects.BetTable;
+import com.ss.gameLogic.objects.BowlDisk;
 import com.ss.gameLogic.objects.Girl;
 
 public class GameScene extends GScreen{
@@ -26,6 +27,8 @@ public class GameScene extends GScreen{
   private BitmapFont font;
   public static long money = 0;
   private boolean firstTime = true;
+  private BowlDisk bowlDisk;
+  private Girl girl;
 
   @Override
   public void dispose() {
@@ -39,9 +42,6 @@ public class GameScene extends GScreen{
     initBitmapfont();
     initGroup();
     initUI();
-
-    //test girl
-    Girl girl = new Girl(atlasGirl);
   }
 
   private void initMoney(){
@@ -83,6 +83,9 @@ public class GameScene extends GScreen{
     betTable = new BetTable(atlas, atlasChips, mainGroup, font);
     addEventBtnPause(btnPause);
     //initBetTable();
+    girl = new Girl(atlasGirl);
+    bowlDisk = new BowlDisk(atlasChips,girl);
+
   }
 
   private void initBitmapfont(){
