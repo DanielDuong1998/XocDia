@@ -21,7 +21,7 @@ public class Config {
   public static float velocity = 500;
   public static float[] scaleTime = new float[]{1000, 1};
   public static int modeSelecting = 1; //1 -> easy, 2 -> medium, 3 -> hard
-  public static int idChip = 1; // todo: use in ChipSmall.java
+  public static int idChip = 7; // todo: use in ChipSmall.java
 
 
 
