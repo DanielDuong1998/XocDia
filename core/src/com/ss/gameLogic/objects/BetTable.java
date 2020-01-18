@@ -17,11 +17,13 @@ import com.badlogic.gdx.utils.Array;
 import com.ss.GMain;
 import com.ss.commons.Tweens;
 import com.ss.core.action.exAction.GSimpleAction;
+import com.ss.core.exSprite.GShapeSprite;
 import com.ss.core.util.GLayer;
 import com.ss.core.util.GLayerGroup;
 import com.ss.core.util.GStage;
 import com.ss.core.util.GUI;
 import com.ss.effects.SoundEffect;
+import com.ss.effects.effectWin;
 import com.ss.gameLogic.StaticObjects.Config;
 import com.ss.scenes.GameScene;
 
@@ -341,6 +343,10 @@ public class BetTable{
     Tweens.setTimeout(group, 1, ()->{
       if(listSmallChips.size > 0){
         SoundEffect.Play(SoundEffect.plusMoney);
+        aniOver(true);
+      }else {
+        aniOver(false);
+
       }
       for(Image chip : listSmallChips){
         chip.addAction(Actions.sequence(
@@ -372,6 +378,44 @@ public class BetTable{
         game.checkMoneyToShowAdPanel();
       });
     });
+  }
+  private void aniOver(Boolean check){
+    Group groupWin = new Group();
+    GStage.addToLayer(GLayer.top,groupWin);
+    final GShapeSprite blackOverlay = new GShapeSprite();
+    blackOverlay.createRectangle(true, -GMain.screenWidth/2,-GMain.screenHeight/2, GMain.screenWidth*2, GMain.screenHeight*2);
+    blackOverlay.setColor(0,0,0,0.8f);
+    groupWin.addActor(blackOverlay);
+    if(check==true){
+      effectWin ef = new effectWin(1,GStage.getWorldWidth()/2,GStage.getWorldHeight()/2);
+      groupWin.addActor(ef);
+      ef.start();
+      Image win = GUI.createImage(atlas,"winVi");
+      win.setPosition(GStage.getWorldWidth()/2,GStage.getWorldHeight()/2,Align.center);
+      groupWin.addActor(win);
+      win.setScale(0);
+      win.setOrigin(Align.center);
+      win.addAction(Actions.scaleTo(1,1,0.5f));
+      Tweens.setTimeout(groupWin,2f,()->{
+        groupWin.remove();
+        groupWin.clear();
+      });
+    }else {
+      effectWin ef = new effectWin(2,GStage.getWorldWidth()/2,GStage.getWorldHeight()/2);
+      groupWin.addActor(ef);
+      ef.start();
+      Image lose = GUI.createImage(atlas,"loseVi");
+      lose.setPosition(GStage.getWorldWidth()/2,GStage.getWorldHeight()/2,Align.center);
+      groupWin.addActor(lose);
+      lose.setScale(0);
+      lose.setOrigin(Align.center);
+      lose.addAction(Actions.scaleTo(1,1,0.5f));
+      Tweens.setTimeout(groupWin,2f,()->{
+        groupWin.remove();
+        groupWin.clear();
+      });
+    }
+
   }
 
   public void hiddenNoShape(boolean isHidden){
