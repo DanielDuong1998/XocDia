@@ -1,0 +1,118 @@
+
+PlayScene.png
+size: 2048,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+bg
+  rotate: false
+  xy: 2, 276
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+chan
+  rotate: false
+  xy: 1284, 475
+  size: 190, 180
+  orig: 190, 180
+  offset: 0, 0
+  index: -1
+chanL
+  rotate: false
+  xy: 2, 22
+  size: 215, 170
+  orig: 215, 170
+  offset: 0, 0
+  index: -1
+frame
+  rotate: false
+  xy: 2, 194
+  size: 595, 80
+  orig: 595, 80
+  offset: 0, 0
+  index: -1
+le
+  rotate: false
+  xy: 1284, 295
+  size: 190, 178
+  orig: 190, 178
+  offset: 0, 0
+  index: -1
+leDo
+  rotate: false
+  xy: 410, 52
+  size: 177, 140
+  orig: 177, 140
+  offset: 0, 0
+  index: -1
+leDoL
+  rotate: false
+  xy: 1501, 829
+  size: 204, 167
+  orig: 204, 167
+  offset: 0, 0
+  index: -1
+leL
+  rotate: false
+  xy: 1284, 826
+  size: 215, 170
+  orig: 215, 170
+  offset: 0, 0
+  index: -1
+leTrang
+  rotate: false
+  xy: 944, 134
+  size: 164, 140
+  orig: 164, 140
+  offset: 0, 0
+  index: -1
+leTrangL
+  rotate: false
+  xy: 219, 25
+  size: 189, 167
+  orig: 189, 167
+  offset: 0, 0
+  index: -1
+redShape
+  rotate: false
+  xy: 2, 2
+  size: 17, 18
+  orig: 17, 18
+  offset: 0, 0
+  index: -1
+tuDo
+  rotate: false
+  xy: 599, 134
+  size: 177, 140
+  orig: 177, 140
+  offset: 0, 0
+  index: -1
+tuDoL
+  rotate: false
+  xy: 1284, 657
+  size: 204, 167
+  orig: 204, 167
+  offset: 0, 0
+  index: -1
+tuTrang
+  rotate: false
+  xy: 778, 134
+  size: 164, 140
+  orig: 164, 140
+  offset: 0, 0
+  index: -1
+tuTrangL
+  rotate: false
+  xy: 1707, 829
+  size: 189, 167
+  orig: 189, 167
+  offset: 0, 0
+  index: -1
+whiteShape
+  rotate: false
+  xy: 1898, 978
+  size: 17, 18
+  orig: 17, 18
+  offset: 0, 0
+  index: -1

@@ -4,192 +4,199 @@ size: 2048,2048
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
-10
-  rotate: false
-  xy: 599, 620
-  size: 189, 60
-  orig: 189, 60
-  offset: 0, 0
-  index: -1
-100
-  rotate: false
-  xy: 790, 620
-  size: 189, 60
-  orig: 189, 60
-  offset: 0, 0
-  index: -1
-20
-  rotate: false
-  xy: 791, 558
-  size: 189, 60
-  orig: 189, 60
-  offset: 0, 0
-  index: -1
-200
-  rotate: false
-  xy: 409, 538
-  size: 189, 60
-  orig: 189, 60
-  offset: 0, 0
-  index: -1
-50
-  rotate: false
-  xy: 1284, 1300
-  size: 189, 60
-  orig: 189, 60
-  offset: 0, 0
-  index: -1
-500
-  rotate: false
-  xy: 600, 558
-  size: 189, 60
-  orig: 189, 60
-  offset: 0, 0
-  index: -1
-aroundFrameMoney
-  rotate: false
-  xy: 1284, 1934
-  size: 592, 86
-  orig: 592, 86
-  offset: 0, 0
-  index: -1
 bg
   rotate: false
-  xy: 2, 1300
+  xy: 2, 1289
   size: 1280, 720
   orig: 1280, 720
   offset: 0, 0
   index: -1
+bgStart
+  rotate: false
+  xy: 2, 567
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+btnClose
+  rotate: false
+  xy: 1903, 1364
+  size: 114, 59
+  orig: 114, 59
+  offset: 0, 0
+  index: -1
+btnExit
+  rotate: false
+  xy: 2, 191
+  size: 395, 96
+  orig: 395, 96
+  offset: 0, 0
+  index: -1
 btnPause
   rotate: false
-  xy: 1878, 1917
-  size: 103, 103
-  orig: 103, 103
+  xy: 1903, 1425
+  size: 100, 103
+  orig: 100, 103
+  offset: 0, 0
+  index: -1
+btnPlay
+  rotate: false
+  xy: 2, 289
+  size: 400, 194
+  orig: 400, 194
+  offset: 0, 0
+  index: -1
+btnRank
+  rotate: false
+  xy: 1284, 1333
+  size: 400, 195
+  orig: 400, 195
   offset: 0, 0
   index: -1
 chan
   rotate: false
-  xy: 2, 144
+  xy: 404, 303
   size: 190, 180
   orig: 190, 180
   offset: 0, 0
   index: -1
 chanL
   rotate: false
-  xy: 2, 326
+  xy: 1284, 1026
   size: 215, 170
   orig: 215, 170
   offset: 0, 0
   index: -1
 frame
   rotate: false
-  xy: 2, 600
+  xy: 2, 485
   size: 595, 80
   orig: 595, 80
   offset: 0, 0
   index: -1
 frameMoney
   rotate: false
-  xy: 1284, 1883
-  size: 492, 49
-  orig: 492, 49
+  xy: 599, 506
+  size: 260, 59
+  orig: 260, 59
+  offset: 0, 0
+  index: -1
+frmAvt
+  rotate: false
+  xy: 1284, 1198
+  size: 400, 133
+  orig: 400, 133
+  offset: 0, 0
+  index: -1
+frmSetting
+  rotate: false
+  xy: 1284, 1530
+  size: 762, 479
+  orig: 762, 479
   offset: 0, 0
   index: -1
 le
   rotate: false
-  xy: 1284, 1362
+  xy: 1284, 677
   size: 190, 178
   orig: 190, 178
   offset: 0, 0
   index: -1
 leDo
   rotate: false
-  xy: 2, 2
+  xy: 1686, 1216
   size: 177, 140
   orig: 177, 140
   offset: 0, 0
   index: -1
 leDoL
   rotate: false
-  xy: 1501, 1714
+  xy: 1284, 857
   size: 204, 167
   orig: 204, 167
   offset: 0, 0
   index: -1
 leL
   rotate: false
-  xy: 1284, 1711
+  xy: 1686, 1358
   size: 215, 170
   orig: 215, 170
   offset: 0, 0
   index: -1
 leTrang
   rotate: false
-  xy: 1109, 705
+  xy: 1692, 932
   size: 164, 140
   orig: 164, 140
   offset: 0, 0
   index: -1
 leTrangL
   rotate: false
-  xy: 219, 329
+  xy: 208, 22
   size: 189, 167
   orig: 189, 167
   offset: 0, 0
   index: -1
-moDia
+pointer
   rotate: false
-  xy: 1300, 1148
-  size: 169, 74
-  orig: 169, 74
+  xy: 1865, 1288
+  size: 69, 68
+  orig: 69, 68
   offset: 0, 0
   index: -1
-table
+redShape
   rotate: false
-  xy: 2, 682
-  size: 1105, 616
-  orig: 1105, 616
-  offset: 0, 0
-  index: -1
-title
-  rotate: false
-  xy: 2, 498
-  size: 405, 100
-  orig: 405, 100
+  xy: 2, 2
+  size: 17, 18
+  orig: 17, 18
   offset: 0, 0
   index: -1
 tuDo
   rotate: false
-  xy: 1109, 989
+  xy: 1692, 1074
   size: 177, 140
   orig: 177, 140
   offset: 0, 0
   index: -1
 tuDoL
   rotate: false
-  xy: 1284, 1542
+  xy: 2, 22
   size: 204, 167
   orig: 204, 167
   offset: 0, 0
   index: -1
 tuTrang
   rotate: false
-  xy: 1109, 847
+  xy: 1284, 535
   size: 164, 140
   orig: 164, 140
   offset: 0, 0
   index: -1
 tuTrangL
   rotate: false
-  xy: 1109, 1131
+  xy: 1501, 1029
   size: 189, 167
   orig: 189, 167
   offset: 0, 0
   index: -1
-xocDia
+turnOff
   rotate: false
-  xy: 1300, 1224
-  size: 169, 74
-  orig: 169, 74
+  xy: 861, 500
+  size: 198, 65
+  orig: 198, 65
+  offset: 0, 0
+  index: -1
+turnOn
+  rotate: false
+  xy: 1061, 500
+  size: 198, 65
+  orig: 198, 65
+  offset: 0, 0
+  index: -1
+whiteShape
+  rotate: false
+  xy: 1450, 657
+  size: 17, 18
+  orig: 17, 18
   offset: 0, 0
   index: -1

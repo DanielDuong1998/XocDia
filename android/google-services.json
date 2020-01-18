@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "707532446921",
-    "firebase_url": "https://color-match-db982.firebaseio.com",
-    "project_id": "color-match-db982",
-    "storage_bucket": "color-match-db982.appspot.com"
+    "project_number": "971511003730",
+    "firebase_url": "https://jksocdia.firebaseio.com",
+    "project_id": "jksocdia",
+    "storage_bucket": "jksocdia.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:707532446921:android:d31348002d773f15584118",
+        "mobilesdk_app_id": "1:971511003730:android:5ab5b6cd3f18556abebd8b",
         "android_client_info": {
-          "package_name": "jk.colormatch"
+          "package_name": "jk.socdia"
         }
       },
       "oauth_client": [
         {
-          "client_id": "707532446921-ej9nfrhuasd4tqjdtvrvjf8fmnr02r08.apps.googleusercontent.com",
+          "client_id": "971511003730-hk4llkm5i17vp2a2090nisnhdr19fdhv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDj4_sCTGLaY3wkQ_xMtBNlttwGsGQFKq8"
+          "current_key": "AIzaSyCEYdPUHEy76-R3EBSlVGfVK_WuMChceeU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "707532446921-ej9nfrhuasd4tqjdtvrvjf8fmnr02r08.apps.googleusercontent.com",
+              "client_id": "971511003730-hk4llkm5i17vp2a2090nisnhdr19fdhv.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

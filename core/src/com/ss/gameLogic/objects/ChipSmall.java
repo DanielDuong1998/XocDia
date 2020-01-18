@@ -19,10 +19,10 @@ public class ChipSmall {
   private float x, y;
 
 
-  public ChipSmall(TextureAtlas atlas, GLayerGroup group, float x, float y){
+  public ChipSmall(TextureAtlas atlas, GLayerGroup group, int id, float x, float y){
     this.atlas = atlas;
     this.group = group;
-    this.id = Config.idChip;
+    this.id = id;
     this.x = x;
     this.y = y;
     initStrName();
@@ -88,6 +88,7 @@ public class ChipSmall {
     group.addActor(shape);
     float px = ((int)Math.floor(Math.random()*10 - 5))*10;
     float py = ((int)Math.floor(Math.random()*8 - 2))*10;
+    shape.setPosition(Config.WidthScreen/2, Config.HeightScreen*1.2f, Align.center);
     shape.addAction(Actions.moveTo(x + px, y + py,0.5f, Interpolation.fastSlow));
   }
 

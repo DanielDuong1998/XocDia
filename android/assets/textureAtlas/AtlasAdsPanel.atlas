@@ -1,0 +1,41 @@
+
+AtlasAdsPanel.png
+size: 2048,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+btnClose
+  rotate: false
+  xy: 1530, 903
+  size: 114, 59
+  orig: 114, 59
+  offset: 0, 0
+  index: -1
+btnWatch
+  rotate: false
+  xy: 766, 395
+  size: 349, 86
+  orig: 349, 86
+  offset: 0, 0
+  index: -1
+panelReward
+  rotate: false
+  xy: 2, 483
+  size: 762, 479
+  orig: 762, 479
+  offset: 0, 0
+  index: -1
+panelShowAd
+  rotate: false
+  xy: 2, 2
+  size: 762, 479
+  orig: 762, 479
+  offset: 0, 0
+  index: -1
+panelSupport
+  rotate: false
+  xy: 766, 483
+  size: 762, 479
+  orig: 762, 479
+  offset: 0, 0
+  index: -1

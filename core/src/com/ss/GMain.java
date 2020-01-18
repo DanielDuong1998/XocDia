@@ -10,8 +10,10 @@ import com.ss.core.util.GDirectedGame;
 import com.ss.core.util.GScreen;
 import com.ss.core.util.GStage;
 import com.ss.core.util.GStage.StageBorder;
+import com.ss.effects.SoundEffect;
 import com.ss.gameLogic.config.C;
 import com.ss.scenes.GameScene;
+import com.ss.scenes.StartScene;
 
 public class GMain extends GDirectedGame {
 
@@ -84,13 +86,14 @@ public class GMain extends GDirectedGame {
   
   private static GScreen menuScreen()
   {
-    return new GameScene();
+    return new StartScene();
   }
 
   public void create()
   {
       this.init();
       this.initPrefs();
+      SoundEffect.initSound();
       C.init();
       this.setScreen(menuScreen());
   }

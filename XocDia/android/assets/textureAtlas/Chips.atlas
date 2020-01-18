@@ -41,7 +41,7 @@ repeat: none
   index: -1
 1000000L
   rotate: false
-  xy: 1170, 105
+  xy: 294, 64
   size: 144, 149
   orig: 144, 149
   offset: 0, 0
@@ -55,7 +55,7 @@ repeat: none
   index: -1
 100000L
   rotate: false
-  xy: 440, 64
+  xy: 586, 105
   size: 144, 149
   orig: 144, 149
   offset: 0, 0
@@ -97,14 +97,14 @@ repeat: none
   index: -1
 100L
   rotate: false
-  xy: 586, 105
+  xy: 1170, 105
   size: 144, 149
   orig: 144, 149
   offset: 0, 0
   index: -1
 100SM
   rotate: false
-  xy: 1869, 112
+  xy: 1917, 112
   size: 46, 38
   orig: 46, 38
   offset: 0, 0
@@ -146,7 +146,7 @@ repeat: none
   index: -1
 500000SM
   rotate: false
-  xy: 1917, 112
+  xy: 1869, 112
   size: 46, 38
   orig: 46, 38
   offset: 0, 0
@@ -167,7 +167,7 @@ repeat: none
   index: -1
 5000L
   rotate: false
-  xy: 294, 64
+  xy: 440, 64
   size: 144, 149
   orig: 144, 149
   offset: 0, 0
@@ -235,6 +235,13 @@ modia
   orig: 184, 59
   offset: 0, 0
   index: -1
+redShape
+  rotate: false
+  xy: 1589, 168
+  size: 17, 18
+  orig: 17, 18
+  offset: 0, 0
+  index: -1
 sclTimer
   rotate: false
   xy: 280, 215
@@ -261,5 +268,12 @@ shiftRight
   xy: 1439, 111
   size: 56, 82
   orig: 56, 82
+  offset: 0, 0
+  index: -1
+whiteShape
+  rotate: false
+  xy: 1589, 148
+  size: 17, 18
+  orig: 17, 18
   offset: 0, 0
   index: -1
