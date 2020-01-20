@@ -6,197 +6,211 @@ filter: Nearest,Nearest
 repeat: none
 bg
   rotate: false
-  xy: 2, 1289
+  xy: 2, 1302
   size: 1280, 720
   orig: 1280, 720
   offset: 0, 0
   index: -1
 bgStart
   rotate: false
-  xy: 2, 567
+  xy: 2, 580
   size: 1280, 720
   orig: 1280, 720
   offset: 0, 0
   index: -1
 btnClose
   rotate: false
-  xy: 1903, 1364
+  xy: 1320, 236
   size: 114, 59
   orig: 114, 59
   offset: 0, 0
   index: -1
 btnExit
   rotate: false
-  xy: 2, 191
+  xy: 1284, 820
   size: 395, 96
   orig: 395, 96
   offset: 0, 0
   index: -1
 btnPause
   rotate: false
-  xy: 1903, 1425
+  xy: 1903, 1009
   size: 100, 103
   orig: 100, 103
   offset: 0, 0
   index: -1
 btnPlay
   rotate: false
-  xy: 2, 289
+  xy: 1284, 918
   size: 400, 194
   orig: 400, 194
   offset: 0, 0
   index: -1
 btnRank
   rotate: false
-  xy: 1284, 1333
+  xy: 712, 383
   size: 400, 195
   orig: 400, 195
   offset: 0, 0
   index: -1
 chan
   rotate: false
-  xy: 404, 303
+  xy: 1114, 398
   size: 190, 180
   orig: 190, 180
   offset: 0, 0
   index: -1
 chanL
   rotate: false
-  xy: 1284, 1026
+  xy: 1284, 648
   size: 215, 170
   orig: 215, 170
   offset: 0, 0
   index: -1
 frame
   rotate: false
-  xy: 2, 485
+  xy: 2, 69
   size: 595, 80
   orig: 595, 80
   offset: 0, 0
   index: -1
 frameMoney
   rotate: false
-  xy: 599, 506
+  xy: 2, 8
   size: 260, 59
   orig: 260, 59
   offset: 0, 0
   index: -1
 frmAvt
   rotate: false
-  xy: 1284, 1198
+  xy: 712, 248
   size: 400, 133
   orig: 400, 133
   offset: 0, 0
   index: -1
 frmSetting
   rotate: false
-  xy: 1284, 1530
+  xy: 1284, 1543
   size: 762, 479
   orig: 762, 479
   offset: 0, 0
   index: -1
 le
   rotate: false
-  xy: 1284, 677
+  xy: 1501, 640
   size: 190, 178
   orig: 190, 178
   offset: 0, 0
   index: -1
 leDo
   rotate: false
-  xy: 1686, 1216
+  xy: 1306, 439
   size: 177, 140
   orig: 177, 140
   offset: 0, 0
   index: -1
 leDoL
   rotate: false
-  xy: 1284, 857
+  xy: 712, 79
   size: 204, 167
   orig: 204, 167
   offset: 0, 0
   index: -1
 leL
   rotate: false
-  xy: 1686, 1358
+  xy: 1686, 942
   size: 215, 170
   orig: 215, 170
   offset: 0, 0
   index: -1
 leTrang
   rotate: false
-  xy: 1692, 932
+  xy: 1486, 356
   size: 164, 140
   orig: 164, 140
   offset: 0, 0
   index: -1
 leTrangL
   rotate: false
-  xy: 208, 22
+  xy: 918, 79
   size: 189, 167
   orig: 189, 167
   offset: 0, 0
   index: -1
+loseVi
+  rotate: false
+  xy: 1284, 1114
+  size: 705, 427
+  orig: 705, 427
+  offset: 0, 0
+  index: -1
 pointer
   rotate: false
-  xy: 1865, 1288
+  xy: 599, 81
   size: 69, 68
   orig: 69, 68
   offset: 0, 0
   index: -1
 redShape
   rotate: false
-  xy: 2, 2
+  xy: 1686, 922
   size: 17, 18
   orig: 17, 18
   offset: 0, 0
   index: -1
 tuDo
   rotate: false
-  xy: 1692, 1074
+  xy: 1485, 498
   size: 177, 140
   orig: 177, 140
   offset: 0, 0
   index: -1
 tuDoL
   rotate: false
-  xy: 2, 22
+  xy: 1114, 229
   size: 204, 167
   orig: 204, 167
   offset: 0, 0
   index: -1
 tuTrang
   rotate: false
-  xy: 1284, 535
+  xy: 1320, 297
   size: 164, 140
   orig: 164, 140
   offset: 0, 0
   index: -1
 tuTrangL
   rotate: false
-  xy: 1501, 1029
+  xy: 1109, 60
   size: 189, 167
   orig: 189, 167
   offset: 0, 0
   index: -1
 turnOff
   rotate: false
-  xy: 861, 500
+  xy: 1284, 581
   size: 198, 65
   orig: 198, 65
   offset: 0, 0
   index: -1
 turnOn
   rotate: false
-  xy: 1061, 500
+  xy: 264, 2
   size: 198, 65
   orig: 198, 65
   offset: 0, 0
   index: -1
 whiteShape
   rotate: false
-  xy: 1450, 657
+  xy: 1300, 209
   size: 17, 18
   orig: 17, 18
+  offset: 0, 0
+  index: -1
+winVi
+  rotate: false
+  xy: 2, 151
+  size: 708, 427
+  orig: 708, 427
   offset: 0, 0
   index: -1
