@@ -140,6 +140,9 @@ public class BetTable{
       }
     }
 
+    // add Particle here!!!
+    System.out.println("check Win: " + checkWinLose());
+
     for(ElementBetTable e : element){
       if(e.getMode() != modeResult.x && e.getMode() != modeResult.y){
         e.reset();
@@ -164,8 +167,21 @@ public class BetTable{
         sendMoney(e);
       }
     }
+  }
 
-    
+  private int checkWinLose(){ // todo: return 0 -> equal , 1 -> win, -1 -> lose
+    long moneyWin = 0, moneyLose = 0;
+    long result = 0;
+    for(ElementBetTable e : element){
+      if(e.getMode() == modeResult.x || e.getMode() == modeResult.y){
+        moneyWin += e.getTotal();
+      }
+      else {
+        moneyLose += e.getTotal();
+      }
+    }
+
+    return moneyWin - moneyLose == 0 ? 0 : moneyWin - moneyLose > 0 ? 1 : -1;
   }
 
   private void sendMoney(ElementBetTable e){
